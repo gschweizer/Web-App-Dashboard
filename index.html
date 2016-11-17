@@ -1,0 +1,205 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Web App Dashboard</title>
+  <meta name="description" content="Web App Dashboard">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+</head>
+
+<body>
+
+      <header class="main-heading">
+            <a href="#"><img class="app-logo" src="img/your-app.svg" alt="App Logo"></a>
+            <img class="notification" src="img/icon-bell.svg" alt="Notification bell icon">
+            <img class="avatar" src="img/avatar.png" alt="Your profile picture">
+            <h1 class="tag-name">Gina Schweizer</h1>
+      </header>
+
+<div id="container">
+    <nav class="main-nav">
+      <ul>
+        <li>
+          <a href="#"> <img src="img/icon-dashboard.svg" alt="Dashboard Icon"></a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/icon-members.svg" alt="Member Icon">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/icon-visits.svg" alt="Visits Icon">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/icon-settings.svg" alt="Settings Icon">
+          </a>
+        </li>
+      </ul>
+    </nav>
+  
+  <div class="main-content">
+    <h1 class="dashboard">Dashboard</h1>
+     <div id="alert">
+        <button type="button" id="close"><img src="img/close.svg" alt="Close 'x' to close alert" height="15"></button>
+        <p><strong>Alert </strong>This is an alert box. If you want it to go away, click the 'x'.</p>
+    </div>
+
+  <!--CHARTS -->
+
+    <div id="mainChart">    
+      <h2 class="traffic">Traffic</h2>
+      <canvas id="MainTrafficChart"></canvas>
+    </div>
+    <div id="trafficChart">
+      <h2>Daily Traffic</h2>
+      <canvas id="WebTrafficChart"></canvas>
+    </div>
+    <div id="mobileChart">
+      <h2>Mobile Users</h2>
+      <canvas id="MobileUsersChart"></canvas>
+    </div>
+
+  <!--SOCIAL MEDIA --> 
+    <div id="wrapper">
+    <h2>Social Stats</h2>
+      <div class="twitter">
+        <img src="img/icon-twitter.svg" alt="Twitter logo">
+        <div class="count">
+          <p>Twitter</p><br>
+          <span>10,345</span>
+        </div>
+      </div>
+      <div class="facebook">
+        <img src="img/icon-facebook.svg" alt="Facebook logo">
+        <div class="count">
+          <p>Facebook</p><br>
+          <span>8,739</span>
+        </div>
+      </div>
+      <div class="google">
+        <img src="img/icon-google-plus.svg" alt="Google logo">
+        <div class="count">
+          <p>Google+</p><br>
+          <span>2,530</span>
+        </div>
+      </div>
+    </div> <!--wrapper-->
+
+  <div class="tbl-wrap">
+    <!--NEW MEMBERS -->
+    <div class="new-members">
+      <table>
+          <caption>New Members</caption>
+            <tr>
+              <td class="col-1"><img class="profile-img" src="img/members/Doug.jpg" alt="Friend's profile image"></td>
+              <td class="name">Doug Funnie<br><a href="#">dougfunnie@example.com</a></td>
+              <td class="date">11/10/16</td>
+            </tr>
+             <tr>
+              <td class="col-1"><img class="profile-img" src="img/members/Karen.jpg" alt="Friend's profile image"></td>
+              <td class="name">Karen White<br><a href="#">karenwhite@example.com</a></td>
+              <td class="date">11/10/16</td>
+            </tr>
+            <tr>
+              <td class="col-1"><img class="profile-img" src="img/members/Tyler.jpg" alt="Friend's profile image"></td>
+              <td class="name">Tyler Perry<br><a href="#">tylerperry@example.com</a></td>
+              <td class="date">11/10/16</td>
+            </tr>
+            <tr>
+              <td class="col-1"><img class="profile-img" src="img/members/Justin.jpg" alt="Friend's profile image"></td>
+              <td class="name">Justin Timberlake<br><a href="#">justintimberlake@example.com</a></td>
+              <td class="date">11/10/16</td>
+            </tr>
+      </table>
+    </div>
+
+  <!--RECENT ACTIVITY -->  
+    <div class="recent-activity">
+      <table>
+          <caption>Recent Activity</caption>
+            <tr>
+              <td class="col-1"><img class="profile-img" src="img/members/Doug.jpg" alt="Friend's profile image"></td>
+              <td class="name">Doug Funnie posted YourApp's SEO Tips<br><img class="action" src="img/post-icon.svg" alt="Action icon"><p>4 hours ago</p></td>
+              <td class="open"><img src="img/icon-open.svg" alt="Open icon"></td>
+            </tr>
+             <tr>
+              <td class="col-1"><img class="profile-img" src="img/members/Karen.jpg" alt="Friend's profile image"></td>
+              <td class="name">Karen White commented on YourApp's SEO Tips<br><img class="action" src="img/comment-icon.svg" alt="Action icon"><p>5 hours ago</p></td>
+              <td class="open"><img src="img/icon-open.svg" alt="Open icon"></td>
+            </tr>
+            <tr>
+              <td class="col-1"><img class="profile-img" src="img/members/Tyler.jpg" alt="Friend's profile image"></td>
+              <td class="name">Tyler Perry commented on Facebook's Changes for 2016<br><img class="action" src="img/comment-icon.svg" alt="Action icon"><p>6 hours ago</p></td>
+              <td class="open"><img src="img/icon-open.svg" alt="Open icon"></td>
+            </tr>
+            <tr>
+              <td class="col-1"><img class="profile-img" src="img/members/Justin.jpg" alt="Friend's profile image"></td>
+              <td class="name">Justin Timberlake is now a member of YourApp<br><img class="action" src="img/like-icon.svg" alt="Action icon"><p>1 day ago</p></td>
+              <td class="open"><img src="img/icon-open.svg" alt="Open icon"></td>
+            </tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="btm-wrap">
+  <!--MESSAGE FORM -->
+    <form method="post" id="msgForm">
+        <h2>Message User</h2>
+        <input type="text" id="name-search" name="user_name" placeholder="Search for User" value="" autocomplete="off"/>
+
+        <textarea id="message" name="user_message" placeholder="Message for User"></textarea>
+
+        <button id="msg-button" type="submit">Send</button>
+    </form>
+
+  <!--SETTINGS FORM -->  
+    <div id="settings">
+        <h2>Settings</h2>
+          <div class="email"><p>Send Email Notifications</p>
+            <div class="onoffswitch">
+              <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+              <label class="onoffswitch-label" for="myonoffswitch">
+                  <span class="onoffswitch-inner"></span>
+                  <span class="onoffswitch-switch"></span>
+              </label>
+            </div>
+          </div>
+          <div class="public"><p>Set Profile to Public</p>
+                <div class="onoffswitch2">
+                    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox2" id="myonoffswitch2" checked>
+                    <label class="onoffswitch-label2" for="myonoffswitch2">
+                        <span class="onoffswitch-inner2"></span>
+                        <span class="onoffswitch-switch2"></span>
+                    </label>
+                </div>
+          </div>
+      <div id="timezone">
+         <select class="timezone-area" name="user_zone">
+            <option value="select-timezone" selected hidden disabled>Select Timezone</option>
+            <option value="pacific-time">Pacific Time (PT)</option>
+            <option value="mountain-time">Mountain Time (MT)</option>
+            <option value="central-time">Central Time (CT)</option>
+            <option value="eastern-time">Eastern Time (ET)</option>
+         </select>
+          <button id="save-button" type="button">Save</button><button id="cancel-button" type="button">Cancel</button>
+      </div>
+    </div>
+  </div>  
+
+  </div> <!--end main content -->
+  </div> <!--end container-->
+
+  <script src="js/jquery-3.1.1.min.js"></script> 
+  <script src="js/script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.bundle.js"></script>
+
+</body>
+</html>
